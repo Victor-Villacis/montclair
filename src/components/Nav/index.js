@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Link} from "react-router-dom";
 import "./style.css";
 function Nav() {
   return (
@@ -21,7 +16,7 @@ function Nav() {
           <li>
             <Link to="/">Team</Link>
           </li>
-          <li>
+          {/* <li>
             <a href="">News</a>
           </li>
           <li>
@@ -29,7 +24,7 @@ function Nav() {
           </li>
           <li>
             <a href="#">Login</a>
-          </li>
+          </li> */}
           <li>
             <Link to="/about">About</Link>
           </li>
