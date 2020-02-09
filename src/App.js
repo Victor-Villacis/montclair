@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Nav from "./components/Nav";
 import Team from "./pages/Team/Team";

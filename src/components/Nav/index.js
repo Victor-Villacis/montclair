@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import "./style.css";
 function Nav() {
   return (
@@ -19,19 +13,24 @@ function Nav() {
         </a>
         <ul id="nav-mobile" className="right hide-on-med-and-down nav-links">
           <li>
-            <Link to="/">Team</Link>
+            <a href="/">Team</a>
+            {/* <Link to="/">Team</Link> */}
           </li>
           <li>
-           <Link to="/news">News</Link>
+            <a href="/news">News</a>
+           {/* <Link to="/news">News</Link> */}
           </li>
           <li>
-            <Link to="/contact">Contact us</Link>
+            <a href="/contact">Contact Us</a>
+            {/* <Link to="/contact">Contact Us</Link> */}
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            < a href = "/login" >Login</a>
+            {/* <Link to="/login">Login</Link> */}
           </li>
           <li>
-            <Link to="/about">About</Link>
+            < a href = "/about" >About</a>
+            {/* <Link to="/about">About</Link> */}
           </li>
         </ul>
       </div>
