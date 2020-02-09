@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Link} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import "./style.css";
 function Nav() {
   return (
@@ -16,15 +21,15 @@ function Nav() {
           <li>
             <Link to="/">Team</Link>
           </li>
-          {/* <li>
-            <a href="">News</a>
+          <li>
+           <Link to="/news">News</Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link to="/contact">Contact us</Link>
           </li>
           <li>
-            <a href="#">Login</a>
-          </li> */}
+            <Link to="/login">Login</Link>
+          </li>
           <li>
             <Link to="/about">About</Link>
           </li>

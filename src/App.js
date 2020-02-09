@@ -3,10 +3,16 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link
 } from "react-router-dom";
 import Nav from "./components/Nav";
 import Team from "./pages/Team/Team";
+import News from "./pages/News/News";
+import Contact from "./pages/Contact/Contact";
+import Login from "./pages/Login/Login";
 import About from "./pages/About/About";
+
+
 
 // import "./App.css";
 
@@ -18,6 +24,9 @@ export default function App() {
     <Nav />
     <Switch>
       <Route exact path="/" component={Team} />
+      <Route exact path="/news" component={News} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/login" component={Login} />
       <Route exact path="/about" component={About} />
     </Switch>
   </div>
