@@ -15,7 +15,21 @@
 }
 
 .nav-links a {
-  color: #333333af;
+  color: #333333;
 
   font-family: "Poppins", sans-serif;
+}
+
+.nav-links {
+  color: #333333;
+}
+.fa-caret-down {
+  color: #333333;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.sub-link a {
+  color: #333333 !important;
 }
