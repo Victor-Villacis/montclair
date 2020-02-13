@@ -1,44 +1,48 @@
-.team-page-body {
-    background-image: url("./images/lightwoodbg.jpg"),
-        radial-gradient(circle at center,
-            rgba(86, 33, 0, 0.56) 0%,
-            rgba(0, 0, 35, 0.59) 100%) !important;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-    background-size: cover;
-    background-position-y: top;
-    background-blend-mode: multiply;
-    background-color: initial !important;
-    overflow: auto;
-    font-family: "Poppins", sans-serif;
+.team-page-body {
+  background-image: url("./images/lightwoodbg.jpg"),
+    radial-gradient(
+      circle at center,
+      rgba(86, 33, 0, 0.56) 0%,
+      rgba(0, 0, 35, 0.59) 100%
+    ) !important;
+
+  background-size: cover;
+  background-position-y: top;
+  background-blend-mode: multiply;
+  background-color: initial !important;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .team-intro-div {
-    background-color: white;
-    margin-top: 60px !important;
-    width: 100%;
+  background-color: white;
+  margin-top: 60px !important;
+  width: 100%;
 }
 
 .icon-team-pg {
-    max-width: 50%;
-    height: auto;
-    align-items: center;
+  max-width: 50%;
+  height: auto;
+  align-items: center;
 }
 
 .team-intro {
-    font-size: 14px;
-    line-height: 1.7em;
-    font-weight: 550;
-    padding-top: 20px;
-    text-align: justify;
+  font-size: 14px;
+  line-height: 1.7em;
+  font-weight: 550;
+  padding-top: 20px;
+  text-align: justify;
 }
 
 section {
-    padding-top: 54px;
-    height: 70vh;
-    margin-top: 16px !important;
+  padding-top: 54px;
+  height: 70vh;
+  margin-top: 16px !important;
 }
 
 .leslie-amalia {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }

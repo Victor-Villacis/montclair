@@ -66,7 +66,7 @@ function Team() {
         <img
           className="leslie-amalia"
           src={require("./images/bipiclesshue.jpg")}
-          alt="LeslieandAmalia"
+          alt="Leslie and Amalia"
         />
       </div>
     </div>
