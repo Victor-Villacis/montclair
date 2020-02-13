@@ -1,0 +1,8 @@
+.et-social-icon a {
+    color: hsl(40, 88%, 63%);
+    display: inline-flex;
+}
+.et-social-icons li{
+    float: right;
+    padding: 10px;
+}

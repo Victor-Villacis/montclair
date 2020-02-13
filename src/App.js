@@ -6,6 +6,7 @@ import News from "./pages/News/News";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/Login/Login";
 import About from "./pages/About/About";
+import Footer from "./components/Footer";
 
 // import "./App.css";
 
@@ -21,6 +22,7 @@ export default function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
