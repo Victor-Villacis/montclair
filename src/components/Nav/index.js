@@ -33,7 +33,7 @@ class Nav extends Component {
 
           <ul id="nav-mobile" className="right hide-on-med-and-down nav-links">
             <li>
-              <a className="dropdown-trigger  " data-target="dropdown1">
+              <a href="/about" className="dropdown-trigger" data-target="dropdown1">
                 About <i class="fas fa-caret-down "></i>
               </a>
             </li>
