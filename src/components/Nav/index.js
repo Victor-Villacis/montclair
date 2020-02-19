@@ -22,15 +22,15 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav className="nav-logout-view">
-          <a href="https://montclaircareshare.com/">
+        <div class="navbar-fixed">
+          <nav class="white">
+          <a href="/home">
             <img
               id="logo"
               src={require("./images/mcslogo.jpg")}
               alt="MontClair Care Share"
             />
           </a>
-
           <ul id="nav-mobile" className="right hide-on-med-and-down nav-links">
             <li>
               <a
@@ -43,15 +43,12 @@ class Nav extends Component {
             </li>
             <li>
               <a href="/news">News</a>
-              {/* <Link to="/news">News</Link> */}
             </li>
             <li>
               <a href="/contact">Contact Us</a>
-              {/* <Link to="/contact">Contact Us</Link> */}
             </li>
             <li>
               <a href="/login">Login</a>
-              {/* <Link to="/login">Login</Link> */}
             </li>
           </ul>
 
@@ -62,14 +59,13 @@ class Nav extends Component {
           >
             <li className="sub-link">
               <a href="/">Team</a>
-              {/* <Link to="/">Team</Link> */}
             </li>
             <li className="sub-link">
               <a href="/">Sponsors</a>
-              {/* <Link to="/">Team</Link> */}
             </li>
           </ul>
         </nav>
+        </div>
       </div>
     );
   }
