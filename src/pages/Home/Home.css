@@ -1,0 +1,37 @@
+/* .toping {
+    position: relative;
+    margin-top: -1000px;
+} */
+
+.parallax-container {
+  height: 800px;
+  
+}
+
+.background {
+    background-image: url("./images/background-image.png");
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background2 {
+    background-image: url("./images/decko.jpg"),
+    radial-gradient(circle at center, rgba(86, 33, 0, 0.56) 0%, rgba(0, 0, 35, 0.59) 100%) !important;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 767px) {
+.background {
+  background-image: url("./images/hPbgbmobilecrvsbg.jpg");
+
+}
+  }
