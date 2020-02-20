@@ -61,11 +61,11 @@ class Nav extends Component {
             className="dropdown-content nav-links right hide-on-med-and-down  "
           >
             <li className="sub-link">
-              <a href="/">Team</a>
+              <a href="/Team">Team</a>
               {/* <Link to="/">Team</Link> */}
             </li>
             <li className="sub-link">
-              <a href="/">Sponsors</a>
+              <a href="/Sponsors">Sponsors</a>
               {/* <Link to="/">Team</Link> */}
             </li>
           </ul>
