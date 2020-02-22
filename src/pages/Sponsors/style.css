@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+.biyrocketsq-div img {
+  background-position: center center;
+  height: 90vh;
+  width: 100vh;
+  background-size: cover;
+}
+
+.logo-sponsors-div {
+  background-position: center center;
+  height: 90vh;
+  width: 100vh;
+  /* padding: 100px 10px !important; */
+  text-align: center;
+
+  background-color: #cbcbcb;
+}
+
+.logo-sponsors-div h5 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  color: #353740;
+}
+
+.logo-sponsors-div h2 {
+  color: #ffffff;
+
+  text-shadow: gray 1px 2px 1px;
+  /* /padding: 10px; */
+  font-size: 65px;
+}
+
+.logo-sponsors-div p,
+h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.container h5 {
+  font-family: "Poppins", sans-serif;
+}
+.logo-sponsors-div p {
+  font-size: 17px;
+  line-height: 2.1em;
+  margin: 0 0 10px;
+  padding-bottom: 1em;
+}
+.img-logo {
+  vertical-align: middle;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0px 20px;
+}
