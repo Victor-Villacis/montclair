@@ -1,37 +1,93 @@
-/* .toping {
-    position: relative;
-    margin-top: -1000px;
-} */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-.parallax-container {
-  height: 800px;
-  
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: row-reverse;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -webkit-flex-flow: row-reverse;
+  -moz-flex-flow: row-reverse;
+  -ms-flex-flow: row-reverse;
+}
+
+.child {
+  margin-top: auto;
+  width: 33vh;
+  max-width: 100%;
+  height: auto;
+}
+
+.box {
+  max-width: 33%;
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto
 }
 
 .background {
-    background-image: url("./images/background-image.png");
-    background-position: center center;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url("./images/background-image.png");
+  background-position: center center;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .background2 {
-    background-image: url("./images/decko.jpg"),
-    radial-gradient(circle at center, rgba(86, 33, 0, 0.56) 0%, rgba(0, 0, 35, 0.59) 100%) !important;
+  background-image: url("./images/decko.jpg"),
+    radial-gradient(circle at center, rgba(86, 33, 0, 0.56) 0%, rgba(0, 0, 35, 0.59) 100%);
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position-x: center;
+  background-position-y: top;
+  background-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 800px) {
+  .child {
+    display: none;
+  }
+}
+
+section#hero {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-right: auto;
+  margin-left: auto
+}
+
+.main {
+  grid-template-rows: auto;
+  display: grid;
+}
+
+@media only screen and (max-width: 800px) {
+  .background {
+    background-image: url("./images/hPbgbmobilecrvsbg.jpg");
     background-position: center center;
-    height: 100vh;
-    width: 100vw;
+    height: 71vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-@media only screen and (max-width: 767px) {
-.background {
-  background-image: url("./images/hPbgbmobilecrvsbg.jpg");
-
-}
+    background-attachment: scroll;
+    z-index: -1;
   }
+}
+
+#body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
