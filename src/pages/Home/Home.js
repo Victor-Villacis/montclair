@@ -17,18 +17,36 @@ componentDidMount() {
 
 render() {
   return (
-    <div>
-      <div class="parallax-container">
-        <div class="background"></div>
-      </div>
-      <div class="row ">
-        <div class="col s6 m5 l4 xl3 right">
-            <img class="responsive-img toping" src={require("./images/treeladder.png")}/>
+    <div id="body">
+
+      {/* 1 */}
+        <div className="background parent">
+          <div className="parent box">
+          <img src={require("./images/treeladder.png")} class="child"></img>
+          </div>
+        </div>
+
+      {/* 2 */}
+      <div className="background2">
+        <div className="container white">
+          <p>hello</p>
         </div>
       </div>
-      <div class="parallax-container">
-        <div class="background2"></div>
-      </div>
+
+      {/* 3 */}
+      <section id="hero">
+        <img src="http://fakeimg.pl/240x200?font=lobster" class=""></img>
+          <div id="content">
+              <h1>Sensible Solutions</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam adipisci cumque tempora quas, hic voluptatibus pariatur repellat numquam accusamus error officia mollitia veniam dolores eaque vero totam dolorem quo.</p>
+          </div>
+          <img src="http://fakeimg.pl/240x200?font=lobster" class=""></img>
+      </section>
+        
+      {/* 4 */}
+      
+      {/* 5 */}
+
 
       </div>
     );
