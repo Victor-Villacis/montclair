@@ -38,13 +38,9 @@ class Sponsors extends Component {
               money and time, they can spend it at local businesses. Win. Win.”
             </p>
           </div>
-          <div className="col l6 s12 biyrocketsq-div">
-            {/* <img
-              className="biyrocketsq  "
-              src={require("./images/biyrocketsq.jpg")}
-              alt="Boy Standing in a latter writing in a wall"
-            /> */}
-          </div>
+          <div className="parallax-container">
+       <div className="parallax right"><img src={require("./images/biyrocketsq.jpg")}></img></div>
+     </div>   
         </div>
         <div className="container">
           <div className="row">
