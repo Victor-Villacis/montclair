@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-.biyrocketsq-div img {
-  background-position: center center;
-  height: 90vh;
-  width: 100vh;
-  background-size: cover;
+.biyrocketsq-div {
+  background-image: url("./images/biyrocketsq.jpg");
+
+  background-position: -200px -230px;
+
+  height: 100vh;
 }
 
 .logo-sponsors-div {
   background-position: center center;
-  height: 90vh;
-  width: 100vh;
-  /* padding: 100px 10px !important; */
-  text-align: center;
+  height: 100vh;
 
+  padding: 50px 10px !important;
+  text-align: center;
   background-color: #cbcbcb;
+}
+
+.logo-sponsors-div img {
+  width: auto;
+  height: 30%;
 }
 
 .logo-sponsors-div h5 {
@@ -26,9 +31,10 @@
 }
 
 .logo-sponsors-div h2 {
-  color: #ffffff;
+  color: white;
+  line-height: 0.8;
 
-  text-shadow: gray 1px 2px 1px;
+  text-shadow: rgb(107, 107, 107) 1px 0.5px 1px;
   /* /padding: 10px; */
   font-size: 65px;
 }
@@ -41,11 +47,13 @@ h2 {
 .container h5 {
   font-family: "Poppins", sans-serif;
 }
-.logo-sponsors-div p {
-  font-size: 17px;
-  line-height: 2.1em;
-  margin: 0 0 10px;
-  padding-bottom: 1em;
+.logo-sponsors-div > p {
+  font-size: 18px;
+  /* line-height: 2em; */
+
+  font-weight: 300;
+
+  color: #353740;
 }
 .img-logo {
   vertical-align: middle;
@@ -55,4 +63,49 @@ h2 {
   justify-content: space-between;
   width: 70%;
   margin: 0px 20px;
+}
+.row-form-sponsor {
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.type-of-sponsor-row p,
+h6 {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.typeof-sponsor-img {
+  height: auto;
+  width: 40%;
+  align-content: center;
+}
+/* label color */
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
 }

@@ -29,7 +29,7 @@ function Contact() {
                   <label for="email">Email</label>
                 </div>
                 <div className="input-field col s12">
-                  <textarea id="message" class="materialize-textarea" />
+                  <textarea id="message" className="materialize-textarea" />
                   <label for="message">Message</label>
                 </div>
               </div>
