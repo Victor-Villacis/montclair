@@ -19,11 +19,16 @@ class Sponsors extends Component {
         <div className="row">
           <div className="col l6 s12 logo-sponsors-div">
             <h5>Help out MCS!</h5>
-            <img
-              className="responsive-img"
-              src={require("./images/logopictoOK.png")}
-              alt="MCS Logo"
-            />
+            <div className="paralax-container">
+              <div className="paralax ">
+                <img
+                  className="responsive-img"
+                  src={require("./images/logopictoOK.png")}
+                  alt="MCS Logo"
+                />
+              </div>
+            </div>
+
             <h2>
               Become <br /> a sponsor
             </h2>
@@ -38,10 +43,16 @@ class Sponsors extends Component {
               money and time, they can spend it at local businesses. Win. Win.”
             </p>
           </div>
-          <div className="parallax-container">
-       <div className="parallax right"><img src={require("./images/biyrocketsq.jpg")}></img></div>
-     </div>   
+          <div className="parallax-container ">
+            <div className="parallax ">
+              <img
+                className="biyrocketsq hide-on-small-only"
+                src={require("./images/biyrocketsq.jpg")}
+              ></img>
+            </div>
+          </div>
         </div>
+
         <div className="container">
           <div className="row">
             <h5 className="center-align ">Our Sponsors</h5>
@@ -99,11 +110,7 @@ class Sponsors extends Component {
             Three types of sponsorships:
           </h4>
           <div className="col l4 s12 ">
-            <img
-              className="typeof-sponsor-img responsive-img img-responsive"
-              src={require("./images/genial.png")}
-              alt="Genial Logo "
-            />
+            <h1>GENIAL</h1>
             <h6>Location Sponsor</h6>
             <p>
               Host MCS meet-ups and your business logo will be added to the MCS
@@ -111,11 +118,7 @@ class Sponsors extends Component {
             </p>
           </div>
           <div className="col l4 s12">
-            <img
-              className="typeof-sponsor-img"
-              src={require("./images/sweet.png")}
-              alt="Sweet title Logo "
-            />
+            <h1>SWEET</h1>
             <h6>Financial Affiliate Sponsor</h6>
             <p>
               Contribute any $250 increment and your business logo will be added
@@ -124,11 +127,7 @@ class Sponsors extends Component {
             </p>
           </div>
           <div className="col l4 s12">
-            <img
-              className="typeof-sponsor-img"
-              src={require("./images/incredible.png")}
-              alt="Incredile Title-Logo "
-            />
+            <h1>INCREDIBLE!</h1>
             <h6>Location + Financial Premier Sponsor</h6>
             <p>
               Advantages of GENIAL and SWEET plus: your logo will be displayed
@@ -145,55 +144,55 @@ class Sponsors extends Component {
           </p>
         </div>
         <div className="row row-form-sponsor">
-          <div className="col s12">
-            <h4 className=" center-align">
-              Want to learn more? Drop us a line!
-            </h4>
-          </div>
+          <div className="col s12"></div>
           <div className="row">
-            <form className="col m8 offset-m2 s12">
+            <form className="col sponsor-form m8 offset-m2 s12">
+              <h4 className=" center-align">
+                Want to learn more? Drop us a line!
+              </h4>
               <div className="row">
-                <div className="input-field col s8">
+                <div className="input-field  sponsor-form-field col s8">
                   <input type="text" name="name" />
                   <label for="name">Name</label>
                 </div>
               </div>
               <div className="row">
-                <div className="input-field col s8">
+                <div className="input-field sponsor-form-field col s8">
                   <input type="text" name="business-name" />
                   <label for="business-name">Business name</label>
                 </div>
               </div>
               <div className="row">
-                <div className="input-field col s8">
+                <div className="input-field  sponsor-form-field col s8">
                   <input type="text" name="sponsor-phone" />
-                  <label for="phone">Phone</label>
+                  <label class="active" for="phone">
+                    Phone
+                  </label>
                 </div>
               </div>
               <div className="row">
-                <div className="input-field col s8">
+                <div className="input-field sponsor-form-field col s8">
                   <input type="email" name="sponsor-email" />
                   <label for="name">Email</label>
                 </div>
               </div>
               <div className="row">
-                <div className="input-field col s8">
-                  <textarea
-                    id="textarea1"
-                    class="materialize-textarea"
-                  ></textarea>
-                  <label for="textarea1">Message</label>
+                <div className="input-field sponsor-form-field col s8">
+                  <textarea id="textarea1" row="5" class=""></textarea>
+                  <label class="active" for="textarea1">
+                    Message
+                  </label>
                 </div>
               </div>
               <div className="row">
                 <div className="col m12">
                   <p className="center-align">
                     <button
-                      className="btn btn-large waves-effect waves-light"
+                      className="btn btn-large waves-effect white  grey-text darken-3"
                       type="button"
                       name="action"
                     >
-                      Send Message
+                      Submit
                     </button>
                   </p>
                 </div>

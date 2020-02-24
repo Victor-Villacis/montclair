@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 
-.biyrocketsq-div {
-  background-image: url("./images/biyrocketsq.jpg");
+.parallax-container {
+  height: 110vh;
+}
 
-  background-position: -200px -230px;
+.biyrocketsq {
+  margin-left: 400px;
+  margin-top: -110px;
 
-  height: 100vh;
+  background-position: center center;
 }
 
 .logo-sponsors-div {
   background-position: center center;
-  height: 100vh;
+  height: 110vh;
 
   padding: 50px 10px !important;
   text-align: center;
@@ -70,33 +74,65 @@ h2 {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.row-form-sponsor h4 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+  font-family: "Poppins", sans-serif !important;
 }
 .type-of-sponsor-row p,
-h6 {
-  font-family: "Montserrat";
+h6,
+button {
+  font-family: "Poppins", sans-serif !important;
   text-align: center;
 }
 
-.typeof-sponsor-img {
-  height: auto;
-  width: 40%;
-  align-content: center;
+.type-of-sponsor-row h1 {
+  font-size: 43px;
+  font-family: "Anton";
+  text-align: center;
+  letter-spacing: 3px;
 }
+
+.row-form-sponsor {
+  background-image: url("./images/bradford.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  font-family: "Montserrat";
+}
+
 /* label color */
 .input-field label {
   color: #000;
 }
+
+.sponsor-form-field {
+  align-content: center;
+  margin: 10px 150px !important;
+}
+
+.sponsor-form {
+  background-color: white;
+  margin-top: 50px;
+}
 /* label focus color */
-.input-field input[type="text"]:focus + label {
+.sponsor-form-field input[type="text"]:focus + label {
   color: #000;
 }
 /* label underline focus color */
-.input-field input[type="text"]:focus {
+.sponsor-form-field input[type="text"]:focus {
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 0 #000;
+  color: black;
+  text-decoration: none !important;
 }
 /* valid color */
-.input-field input[type="text"].valid {
+.sponsor-form-field input[type="text"].valid {
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 0 #000;
 }
@@ -106,6 +142,6 @@ h6 {
   box-shadow: 0 1px 0 0 #000;
 }
 /* icon prefix focus color */
-.input-field .prefix.active {
+.isponsor-form-field .prefix.active {
   color: #000;
 }
