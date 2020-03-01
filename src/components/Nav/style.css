@@ -5,6 +5,23 @@
   display: inline-block;
 }
 
+.burger {
+  float: right !important;
+}
+
+.burger-icon {
+  color: black !important;
+}
+
+.sidenavbg {
+  background-color: khaki !important;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+
+.container li {
+  margin-top: 30px;
+}
 .nav-logout-view {
   background-color: white;
   z-index: 99999;
@@ -35,4 +52,3 @@
 .sub-link a {
   color: #333333 !important;
 }
-

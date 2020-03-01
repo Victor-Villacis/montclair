@@ -17,12 +17,16 @@ class Nav extends Component {
         coverTrigger: false
       });
     });
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems1 = document.querySelectorAll(".sidenav", { draggable: true });
+      M.Sidenav.init(elems1);
+    });
   }
 
   render() {
     return (
       <div>
-        <div class="navbar-fixed">
+        <div class="">
           <nav class="white">
             <a href="/home">
               <img
@@ -31,10 +35,7 @@ class Nav extends Component {
                 alt="MontClair Care Share"
               />
             </a>
-            <ul
-              id="nav-mobile"
-              className="right hide-on-med-and-down nav-links"
-            >
+            <ul className="right hide-on-med-and-down nav-links">
               <li>
                 <a
                   href="/about"
@@ -54,7 +55,13 @@ class Nav extends Component {
                 <a href="/login">Login</a>
               </li>
             </ul>
-
+            <a
+              href="#"
+              data-target="slide-out"
+              className="burger sidenav-trigger"
+            >
+              <i className=" burger-icon material-icons">menu</i>
+            </a>
             {/* Dropdown content  */}
             <ul
               id="dropdown1"
@@ -62,13 +69,38 @@ class Nav extends Component {
             >
               <li className="sub-link">
                 <a href="/Team">Team</a>
-                {/* <Link to="/">Team</Link> */}
               </li>
               <li className="sub-link">
                 <a href="/Sponsors">Sponsors</a>
-                {/* <Link to="/">Team</Link> */}
               </li>
             </ul>
+
+            {/*---------Burger-------*/}
+            <div className="container">
+              <ul id="slide-out" className=" sidenavbg sidenav right">
+                <li className="sub-link">
+                  <a href="/Team">Team</a>
+                </li>
+                <li className="sub-link">
+                  <a href="/Sponsors">Sponsors</a>
+                </li>
+                <li>
+                  <a class="sidenav-close" href="/news">
+                    News
+                  </a>
+                </li>
+                <li>
+                  <a class="sidenav-close" href="/contact">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a class="sidenav-close" href="/login">
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
