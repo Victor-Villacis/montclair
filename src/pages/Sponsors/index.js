@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
-
 import M from "materialize-css";
+
 class Sponsors extends Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
@@ -46,6 +46,7 @@ class Sponsors extends Component {
           <div className="parallax-container ">
             <div className="parallax ">
               <img
+                alt="biyrocket"
                 className="biyrocketsq hide-on-small-only"
                 src={require("./images/biyrocketsq.jpg")}
               ></img>

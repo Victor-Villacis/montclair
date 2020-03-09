@@ -14,7 +14,7 @@ function Contact() {
           <h2 className="center-align">Contact Us</h2>
           <div className="row">
             <form
-              class="gform col m8 offset-m2 s12"
+              className="gform col m8 offset-m2 s12"
               method="Post"
               // data-email="er.nehaa.gupta@gmail.com"
               // action="https://script.google.com/macros/s/AKfycbx8scpQkb1tEoF6NN3BbSLCl3TuzEOPHuYBCwyi/exec"
@@ -25,7 +25,7 @@ function Contact() {
                   <label for="name">Name</label>
                 </div>
                 <div className="input-field col s12">
-                  <input id="email" type="email" class="form-input" />
+                  <input id="email" type="email" className="form-input" />
                   <label for="email">Email</label>
                 </div>
                 <div className="input-field col s12">

@@ -23,7 +23,6 @@ export default function App() {
           <Route exact path="/team" component={Team} />
           <Route exact path="/sponsors" component={Sponsors} />
           <Route exact path="/partners" component={Partners} />
-    
           <Route exact path="/news" component={News} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />

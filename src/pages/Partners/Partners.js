@@ -21,7 +21,7 @@ render() {
         <p>hello</p>   
       </div> 
      <div className="parallax-container">
-       <div className="parallax right"><img src={require("./images/biyrocketsq.jpg")}></img></div>
+       <div className="parallax right"><img alt="rocket" src={require("./images/biyrocketsq.jpg")}></img></div>
      </div>   
      <div>
        <p>Hello</p>

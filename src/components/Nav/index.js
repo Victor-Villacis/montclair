@@ -26,9 +26,9 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <div class="">
-          <nav class="white">
-            <a href="/home">
+        <div className="">
+          <nav className="white">
+            <a href="/">
               <img
                 id="logo"
                 src={require("./images/mcslogo.jpg")}
@@ -42,7 +42,7 @@ class Nav extends Component {
                   className="dropdown-trigger"
                   data-target="dropdown1"
                 >
-                  About <i class="fas fa-caret-down "></i>
+                  About <i className="fas fa-caret-down "></i>
                 </a>
               </li>
               <li>
@@ -85,17 +85,17 @@ class Nav extends Component {
                   <a href="/Sponsors">Sponsors</a>
                 </li>
                 <li>
-                  <a class="sidenav-close" href="/news">
+                  <a className="sidenav-close" href="/news">
                     News
                   </a>
                 </li>
                 <li>
-                  <a class="sidenav-close" href="/contact">
+                  <a className="sidenav-close" href="/contact">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a class="sidenav-close" href="/login">
+                  <a className="sidenav-close" href="/login">
                     Login
                   </a>
                 </li>

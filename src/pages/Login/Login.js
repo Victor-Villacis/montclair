@@ -3,71 +3,43 @@ import "./style.css";
 
 function Login() {
   return (
-    <>
-      <main>
-        <center>
-          <div class="section"></div>
-          <h5 class="indigo-text">Please, login into your account</h5>
-          <div class="section"></div>
-
-          <div class="container container-login">
-            <div class="z-depth-1  row">
-              <form class="col s12" method="post">
-                <div class="row">
-                  <div class="col s12"></div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input
-                      class="validate"
-                      type="email"
-                      name="email"
-                      id="email"
-                    />
-                    <label for="email">Enter your username or email</label>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input
-                      class="validate"
-                      type="password"
-                      name="password"
-                      id="password"
-                    />
-                    <label for="password">Enter your password</label>
-                  </div>
-                  <label>
-                    <a class="pink-text" href="#!">
-                      <b>Forgot Password?</b>
-                    </a>
-                  </label>
-                </div>
-
-                <br />
-                <center>
-                  <div class="row">
-                    <button
-                      type="submit"
-                      name="btn_login"
-                      class="col s12 btn btn-large waves-effect indigo"
-                    >
-                      Login
-                    </button>
-                  </div>
-                </center>
-              </form>
-            </div>
+    <div className="container-login">
+      <form className="login-form">
+        <div className="row">
+        </div>
+        <div className="row">
+          <div className="input-field col s6 m6 l6">
+            <i className="material-icons prefix">mail_outline</i>
+            <input className="validate" id="email" type="email" />
+            <label for="email" data-error="wrong" data-success="right">Email</label>
           </div>
-        </center>
-      </main>
-
-      <div class="bkg">
+        </div>
+        <div className="row">
+          <div className="input-field col s6 m6 l6">
+            <i className="material-icons prefix">lock_outline</i>
+            <input id="password" type="password" />
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div className="row">          
+          <div className="input-field col s6 m6 l6  login-text">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+          </div>
+        </div>
+        <div className="row">
+          <div className="input-field col s6">
+            <a href="#" className="btn waves-effect waves-light col s12">Login</a>
+          </div>
+        </div>
+          <div className="input-field col s6 m6 l6">
+              <p className="margin right-align medium-small"><a href="#">Forgot password?</a></p>
+          </div>          
+      </form>
+      <div className="bkg">
         <img src={require("../Contact/images/city2.png")} alt="City"></img>
       </div>
-    </>
+    </div>
   );
 }
 
