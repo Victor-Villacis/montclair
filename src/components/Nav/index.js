@@ -51,8 +51,16 @@ class Nav extends Component {
               <li>
                 <a href="/contact">Contact Us</a>
               </li>
+              {this.props.auth.isAuthenticated && this.props.auth.user && (
+                <p>
+                  Hello {this.props.auth.user.username}
+                </p>
+              )}
               <li>
                 <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/register">Register</a>
               </li>
             </ul>
             <a
@@ -97,6 +105,11 @@ class Nav extends Component {
                 <li>
                   <a className="sidenav-close" href="/login">
                     Login
+                  </a>
+                </li>
+                <li>
+                  <a className="sidenav-close" href="/register">
+                    Register
                   </a>
                 </li>
               </ul>

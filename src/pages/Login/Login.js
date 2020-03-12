@@ -1,46 +1,85 @@
-import React from "react";
-import "./style.css";
+import React, { Component } from 'react';
+import { Auth } from 'aws-amplify';
 
-function Login() {
-  return (
-    <div className="container-login">
-      <form className="login-form">
-        <div className="row">
-        </div>
-        <div className="row">
-          <div className="input-field col s6 m6 l6">
-            <i className="material-icons prefix">mail_outline</i>
-            <input className="validate" id="email" type="email" />
-            <label for="email" data-error="wrong" data-success="right">Email</label>
+class SignInForm extends Component {
+    constructor(props) {
+        super(props);
+  
+        this.state = {
+            user: '',
+            password: '',
+            signedIn: false
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.signIn = this.signIn.bind(this);
+        this.confirmSignIn = this.confirmSignIn.bind(this);
+    }
+  
+    signIn() {
+        const { username, password } = this.state;  
+        Auth.signIn({
+            username: username,
+            password: password
+        })
+        .then(() => console.log('successfully signed in'))
+        .catch((err) => console.log(`Error signing in: ${ err }`))
+    }
+  
+    confirmSignIn() {
+        const { username } = this.state;
+        Auth.confirmSignIn(username)
+        .then(() => console.log('successfully confirmed signed in'))
+        .catch((err) => console.log(`Error confirming sign up - ${ err }`))
+    }
+  
+    handleSubmit(e) {
+        e.preventDefault();
+
+        this.signIn();
+        this.confirmSignIn()
+        this.setState({
+            username: '',
+            password: '',
+            signedIn: true
+        });
+        e.target.reset();
+    }
+  
+    handleChange(e) {
+        if (e.target.id === 'username') {
+          this.setState({
+              username: e.target.value
+          });
+        } else if (e.target.id === 'password') {
+          this.setState({
+              password: e.target.value
+          });
+        }
+    }
+  
+    render() {
+      const { signedIn } = this.state;
+      if (signedIn) {
+          return (
+              <div>
+                  <h1>You have signed in!</h1>
+              </div>
+          );
+      } else {
+        return (
+          <div>
+            <form onSubmit={ this.handleSubmit }>
+                <label>Username</label>
+                <input id='username' type='text' onChange={ this.handleChange }/>
+                <label>Password</label>
+                <input id='password' type='password' onChange={ this.handleChange }/>
+                <button>Sign In</button>
+            </form>
           </div>
-        </div>
-        <div className="row">
-          <div className="input-field col s6 m6 l6">
-            <i className="material-icons prefix">lock_outline</i>
-            <input id="password" type="password" />
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div className="row">          
-          <div className="input-field col s6 m6 l6  login-text">
-              <input type="checkbox" id="remember-me" />
-              <label for="remember-me">Remember me</label>
-          </div>
-        </div>
-        <div className="row">
-          <div className="input-field col s6">
-            <a href="#" className="btn waves-effect waves-light col s12">Login</a>
-          </div>
-        </div>
-          <div className="input-field col s6 m6 l6">
-              <p className="margin right-align medium-small"><a href="#">Forgot password?</a></p>
-          </div>          
-      </form>
-      <div className="bkg">
-        <img src={require("../Contact/images/city2.png")} alt="City"></img>
-      </div>
-    </div>
-  );
+        );
+      }
+    }
 }
 
-export default Login;
+export default SignInForm;
